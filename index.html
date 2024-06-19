@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chat AI - OpenAI - AIgency</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/logo.svg">
+
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/feather.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="hero-area bg-grd">
+        <div id="bg-star"><div id="stars"></div><div id="stars2"></div><div id="stars3"></div></div>
+        <div class="container">
+            <div class="hero-item d-flex align-items-center">
+                <div class="row align-items-center">
+                    <div class="col-lg-7">
+                        <div class="hero">
+                           <div class="logo mb-4">
+                              <a href="index.html"><img src="assets/img/logo/logo-white.svg" alt="chatai"></a>
+                          </div>
+                            <h2 class="hero-title">Perfect solution with AI content.</h2>
+                            <p>We can help you with social media, seo content, team builder, <br> reading  writing with smar ai content.</p>
+                            <div class="hero-btn">
+                                <a href="#team-section" class="tp-btn hero-btn">Start Chat With AI Team</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="hero-thumb">
+                            <img src="assets/img/hero/hero-thumb.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="team-section" class="team-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="section-box">
+                        <h2 class="section-title">Professional AI Team</h2>
+                        <p>ChatGPT is a large language model designed to understand <br> and generate human-like language.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="load-teams">
+                  <!-- load all teams member  --> 
+            </div>
+        </div>
+    </div>
+
+    <!-- Chatbot area  -->
+    <header class="chatbot-header d-none">
+      <div class="logo text-center">
+          <a href="index.html"><img src="assets/img/logo/logo.svg" alt="chatai"></a>
+      </div>
+  </header>
+      <div class="chat-bg d-none">
+        <div class="container-fluid p-0">
+          <div class="chat-sidebar-wrap">
+            <div class="row g-0 z-index-1 chat-height">
+              <div class="col-xl-3 col-lg-4 col-md-5 d-none d-md-block">
+                <div class="chat-sidebar-main">
+                  <div class="chat-sidebar">
+                    <div class="chat-sidebar-logo">
+                      <a href="index.html"><img src="assets/img/logo/logo-black.svg" alt=""></a>
+                    </div>
+                    <div class="sidebar-select-box">
+                      <div class="sidebar-select-field">
+                        <label for="select-lang">Output language</label>
+                        <select class="form-select" name="select-lang" id="select-lang">
+                            <option value="English (UK)">Default</option>
+                            <option value="Afrikaans">Afrikaans</option>
+                            <option value="Albanian">Albanian</option>
+                            <option value="Arabic">Arabic</option>
+                            <option value="Armenian">Armenian</option>
+                            <option value="Azerbaijani">Azerbaijani</option>
+                            <option value="Basque">Basque</option>
+                            <option value="Belarusian">Belarusian</option>
+                            <option value="Bengali">Bengali</option>
+                            <option value="Bosnian">Bosnian</option>
+                            <option value="Bulgarian">Bulgarian</option>
+                            <option value="Catalan">Catalan</option>
+                            <option value="Cebuano">Cebuano</option>
+                            <option value="Chichewa">Chichewa</option>
+                            <option value="Chinese (Simplified)">Chinese (Simplified)</option>
+                            <option value="Chinese (Traditional)">Chinese (Traditional)</option>
+                            <option value="Corsican">Corsican</option>
+                            <option value="Croatian">Croatian</option>
+                            <option value="Czech">Czech</option>
+                            <option value="Danish">Danish</option>
+                            <option value="Dutch">Dutch</option>
+                            <option value="English (US)">English (US)</option>
+                            <option value="English (UK)">English (UK)</option>
+                            <option value="Esperanto">Esperanto</option>
+                            <option value="Estonian">Estonian</option>
+                            <option value="Filipino">Filipino</option>
+                            <option value="Finnish">Finnish</option>
+                            <option value="French">French</option>
+                            <option value="Frisian">Frisian</option>
+                            <option value="Galician">Galician</option>
+                            <option value="Georgian">Georgian</option>
+                            <option value="German">German</option>
+                            <option value="Greek">Greek</option>
+                            <option value="Gujarati">Gujarati</option>
+                            <option value="Haitian Creole">Haitian Creole</option>
+                            <option value="Hausa">Hausa</option>
+                            <option value="Hawaiian">Hawaiian</option>
+                            <option value="Hebrew">Hebrew</option>
+                            <option value="Hindi">Hindi</option>
+                            <option value="Hmong">Hmong</option>
+                            <option value="Hungarian">Hungarian</option>
+                            <option value="Icelandic">Icelandic</option>
+                            <option value="Igbo">Igbo</option>
+                            <option value="Indonesian">Indonesian</option>
+                            <option value="Irish">Irish</option>
+                            <option value="Italian">Italian</option>
+                            <option value="Japanese">Japanese</option>
+                            <option value="Javanese">Javanese</option>
+                            <option value="Kannada">Kannada</option>
+                            <option value="Kazakh">Kazakh</option>
+                            <option value="Khmer">Khmer</option>
+                            <option value="Kinyarwanda">Kinyarwanda</option>
+                            <option value="Korean">Korean</option>
+                            <option value="Kurdish (Kurmanji)">Kurdish (Kurmanji)</option>
+                            <option value="Kyrgyz">Kyrgyz</option>
+                            <option value="Lao">Lao</option>
+                            <option value="Latin">Latin</option>
+                            <option value="Latvian">Latvian</option>
+                            <option value="Lithuanian">Lithuanian</option>
+                            <option value="Luxembourgish">Luxembourgish</option>
+                            <option value="Macedonian">Macedonian</option>
+                            <option value="Malagasy">Malagasy</option>
+                            <option value="Malay">Malay</option>
+                            <option value="Malayalam">Malayalam</option>
+                            <option value="Maltese">Maltese</option>
+                            <option value="Maori">Maori</option>
+                            <option value="Marathi">Marathi</option>
+                            <option value="Mongolian">Mongolian</option>
+                            <option value="Myanmar (Burmese)">Myanmar (Burmese)</option>
+                            <option value="Nepali">Nepali</option>
+                            <option value="Norwegian">Norwegian</option>
+                            <option value="Odia (Oriya)">Odia (Oriya)</option>
+                            <option value="Pashto">Pashto</option>
+                            <option value="Persian">Persian</option>
+                            <option value="Polish">Polish</option>
+                            <option value="Portuguese">Portuguese</option>
+                            <option value="Punjabi">Punjabi</option>
+                            <option value="Romanian">Romanian</option>
+                            <option value="Russian">Russian</option>
+                            <option value="Samoan">Samoan</option>
+                            <option value="Scots Gaelic">Scots Gaelic</option>
+                            <option value="Serbian">Serbian</option>
+                            <option value="Sesotho">Sesotho</option>
+                            <option value="Shona">Shona</option>
+                            <option value="Sindhi">Sindhi</option>
+                            <option value="Sinhala (Sinhalese)">Sinhala (Sinhalese)</option>
+                            <option value="Slovak">Slovak</option>
+                            <option value="Slovenian">Slovenian</option>
+                            <option value="Somali">Somali</option>
+                            <option value="Spanish">Spanish</option>
+                            <option value="Sundanese">Sundanese</option>
+                            <option value="Swahili">Swahili</option>
+                            <option value="Swedish">Swedish</option>
+                            <option value="Tagalog (Filipino)">Tagalog (Filipino)</option>
+                            <option value="Tajik">Tajik</option>
+                            <option value="Tamil">Tamil</option>
+                            <option value="Tatar">Tatar</option>
+                            <option value="Telugu">Telugu</option>
+                            <option value="Thai">Thai</option>
+                            <option value="Turkish">Turkish</option>
+                            <option value="Turkmen">Turkmen</option>
+                            <option value="Ukrain">Ukrain</option>
+                            <option value="Urdu">Urdu</option>
+                            <option value="Uyghur">Uyghur</option>
+                            <option value="Uzbek">Uzbek</option>
+                            <option value="Vietnamese">Vietnamese</option>
+                            <option value="Welsh">Welsh</option>
+                            <option value="Xhosa">Xhosa</option>
+                            <option value="Yiddish">Yiddish</option>
+                            <option value="Yoruba">Yoruba</option>
+                            <option value="Zulu">Zulu</option>
+                        </select>                       
+                      </div>
+                      <div class="sidebar-select-field">
+                        <label for="select-tone">Tone</label>
+                        <select class="form-select" name="select-tone" id="select-tone">
+                            <option value="Be conversational">Default</option>
+                            <option value="Be conversational">Be conversational</option>
+                            <option value="Emotional">Emotional</option>
+                            <option value="Professional">Professional</option>
+                            <option value="Humorous">Humorous</option>
+                            <option value="Educational">Educational</option>
+                        </select>
+                      </div>
+                      <div class="sidebar-select-field">
+                        <label for="select-style">Writing Style</label>
+                        <select class="form-select" name="select-style" id="select-style">
+                            <option value="Conversational style">Default</option>
+                            <option value="Conversational style">Conversational</option>
+                            <option value="Poetic">Poetic</option>
+                            <option value="Narrative">Narrative</option>
+                            <option value="Argumentative">Argumentative</option>
+                            <option value="Descriptive">Descriptive</option>
+                            <option value="Journalistic">Journalistic</option>
+                            <option value="Analytical">Analytical</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="chat-sidebar-btn-wrap">
+                    <div class="chat-sidebar-btn">
+                      <a class="btn-1" id="chatbot-chat-text" href="#">
+                        <span>
+                          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M1.3125 14C0.9625 14 0.65625 13.8687 0.39375 13.6062C0.13125 13.3438 0 13.0375 0 12.6875V9.55937H1.3125V12.6875H12.6875V9.55937H14V12.6875C14 13.0375 13.8687 13.3438 13.6062 13.6062C13.3438 13.8687 13.0375 14 12.6875 14H1.3125ZM7 10.6531L2.77813 6.43125L3.71875 5.49062L6.34375 8.11562V0H7.65625V8.11562L10.2812 5.49062L11.2219 6.43125L7 10.6531Z"
+                              fill="currentcolor" />
+                          </svg>
+                        </span>
+                        Download Text
+                      </a>
+                      <a class="btn-2" id="chatbot-chat-pdf" href="#">
+                        <span>
+                          <svg width="13" height="16" viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M6.44 12.04L9.56 8.92L8.7 8.06L7.04 9.72V5.84H5.84V9.72L4.18 8.06L3.32 8.92L6.44 12.04ZM1.2 16C0.88 16 0.6 15.88 0.36 15.64C0.12 15.4 0 15.12 0 14.8V4.78L4.78 0H11.6C11.92 0 12.2 0.12 12.44 0.36C12.68 0.6 12.8 0.88 12.8 1.2V14.8C12.8 15.12 12.68 15.4 12.44 15.64C12.2 15.88 11.92 16 11.6 16H1.2Z"
+                              fill="currentcolor" />
+                          </svg>
+                        </span>
+                        Download PDF
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-9 col-lg-8 col-md-7">
+                <div class="chat-box-wrapper z-index-1">
+                  <div class="chat-box-header">
+                    <div class="chat-box-bg-wrap">
+                      <div class="chat-box-bg">
+                        <div class="chat-box-top d-flex align-items-center">
+                          <div class="chat-box-top-avata">
+                            <img src="assets/img/avata/avata-1.png" alt="">
+                            <span class="online-active"></span>
+                          </div>
+                          <div class="author-info">
+                            <h5 class="author-name top-chat-title">David Johnson</h5>
+                            <span class="top-chat-designation">Social Media Manager</span>
+                            <span class="top-chat-gender d-none"></span>
+                          </div>
+                        </div>
+                        <div class="chat-box-top-setting d-flex align-items-center">
+                          <div class="chat-ai-settings">
+                            <div class="btn-group">
+                              <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="assets/img/icon/setting.png" alt="">
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" id="chatbot-chat-close" href="#">Close Chat</a></li>
+                                <li><a class="dropdown-item" id="chatbot-chat-clear" href="#">Clear Chat</a></li>
+                                <li><a class="dropdown-item" id="chatbot-chat-clear-all" href="#">Clear all Chats</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="chat-box-top-bar d-md-none z-index-5">
+                            <button class="tp-menu-bar">
+                              <i class="feather-sidebar"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat-list-wrap">
+                      <div class="list-box">
+                        <div class="chat-list-item d-flex align-items-start">
+                          <div class="chat-list-avata-sm">
+                            <img src="assets/img/avata/avata-sm.png" alt="">
+                          </div>
+                          <div class="chat-list-content-wrap team-details">
+                            <div class="chat-list-content">
+                              <h5 class="chat-list-title ai-chat-title">David Johnson</h5>
+                              <p class="team-description">Hello, my name is David Johnson and I am an experienced salesperson committed to
+                                helping my clients achieve their sales goals.</p>
+                            </div>
+                            <div class="chat-meta-box d-flex justify-content-between">
+                              <div class="chat-meta">
+                               
+                                <span class="date-time"> 5/3/2023, 12:03:59 PM</span>
+                              </div>
+                              <div class="chat-meta-btn copy-text">
+                                <a class="meta-btn" href="">
+                                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.7 4.55002H5.85005C5.13208 4.55002 4.55005 5.13205 4.55005 5.85002V11.7C4.55005 12.418 5.13208 13 5.85005 13H11.7C12.418 13 13 12.418 13 11.7V5.85002C13 5.13205 12.418 4.55002 11.7 4.55002Z" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M2.95 9.45H2.3C1.95522 9.45 1.62456 9.31304 1.38076 9.06924C1.13696 8.82544 1 8.49478 1 8.15V2.3C1 1.95522 1.13696 1.62456 1.38076 1.38076C1.62456 1.13696 1.95522 1 2.3 1H8.15C8.49478 1 8.82544 1.13696 9.06924 1.38076C9.31304 1.62456 9.45 1.95522 9.45 2.3V2.95" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round"/>
+                                  </svg>
+                                  Copy text
+                                </a>
+                              </div>
+                            </div>
+                            <div class="chat-list-play-btn">
+                              <button class="play-voice"><i class="feather-play"></i></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Chatbot convertion  -->
+                   <div class="chatbot-convertion">
+                            
+                   </div>
+                    </div>
+                  </div>
+                  <div class="chat-input-wrap">       
+                      <div class="chat-input">
+                        <input type="text" id="messageInput" placeholder="Type your message here">
+                        <button id="send-button">
+                          <span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M15 1L10.1 15L7.3 8.7L1 5.9L15 1Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                        </button>
+                        <div class="loading d-none">
+                          <div class="loading__letter response-name">Noel </div>
+                          <div class="loading__letter">is</div>
+                          <div class="loading__letter">typing</div>
+                          <div class="loading__letter">.</div>
+                          <div class="loading__letter">.</div>
+                          <div class="loading__letter">.</div>
+                      </div>
+                      <div class="alert alert-danger fs-6 d-none" id="api-key-warning" role="alert">
+                        Please Set Your API Key!
+                      </div>
+                      <div class="alert alert-danger fs-6 d-none" id="msg-warning" role="alert">
+                        Please Insert Message!
+                      </div>
+                      </div>
+                     
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <footer>
+        <div class="footer-area bg-grd">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="copyright">
+                            <p>© 2023 ChatAI All Rights Reserved.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer-link text-left text-md-end">
+                            <a href="#">Privacy Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jspdf.min.js"></script>
+    <script src="assets/js/domtoimage.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

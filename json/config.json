@@ -1,0 +1,68 @@
+{
+   "API_KEY": "INSERT_YOUR_API_KEY",
+   "url": "https://api.openai.com/v1/completions",
+   "model": "text-davinci-003",
+   "temperature": 1,
+   "max_tokens": 1500,
+   "top_p": 1,
+   "frequency_penalty": 0,
+   "presence_penalty": 0,
+   "all_teams": [
+      {
+         "team_name": "Noel A. McClain",
+         "team_designation": "Seo Expert",
+         "description": "Hi, my name is Noel A. McClain and i am  SEO (Search Engine Optimization) expert, i play a vital role in helping websites improve their visibility and organic rankings in search engine results. My  expertise involves optimizing website content, conducting keyword research, analyzing website performance, and implementing strategies to enhance organic traffic.",
+         "profile_url": "assets/img/team/team-1.jpg",
+         "gender": "male"
+      },
+      {
+         "team_name": "Angela K. Cherry",
+         "team_designation": "Software Developer",
+         "description": "Hi, my name is Angela K. Cherry and i am a software developer, i have a valuable skillset in designing, coding, testing, and maintaining software applications. My role involves analyzing user requirements, writing efficient and reliable code, debugging and troubleshooting issues, and collaborating with other team members to deliver high-quality software solutions.",
+         "profile_url": "assets/img/team/team-2.jpg",
+         "gender": "female"
+      },
+      {
+         "team_name": "Judy C. Christiansen",
+         "team_designation": "UI/UX Designer",
+         "description": "Hi, my name is Judy C. Christiansen and i am a UI/UX (User Interface/User Experience) designer, i have a crucial role in creating intuitive and visually appealing interfaces for digital products. My expertise involves understanding user needs, designing user interfaces that are both functional and aesthetically pleasing, conducting user research, and optimizing the overall user experience.",
+         "profile_url": "assets/img/team/team-3.jpg",
+         "gender": "female"
+      },
+      {
+         "team_name": "Jonathan R. King",
+         "team_designation": "IT Manager",
+         "description": "Hi, my name is Jonathan R. King and i am an IT Manager, I have an important role in overseeing the technology infrastructure and operations within an organization. My  responsibilities may include managing the IT team, developing and implementing IT strategies, ensuring system security and data integrity and providing technical support to employees.",
+         "profile_url": "assets/img/team/team-4.jpg",
+         "gender": "male"
+      },
+      {
+         "team_name": "David Johnson",
+         "team_designation": "Social Media Manager",
+         "description": "Hi, my name is David Johnson and i am a social media manager, i play a crucial role in managing and executing social media strategies for businesses or individuals. My  responsibilities may include creating and curating engaging content, scheduling and publishing posts, analyzing social media metrics, managing online communities, and implementing social media advertising campaigns.",
+         "profile_url": "assets/img/team/team-5.jpg",
+         "gender": "male"
+      },
+      {
+         "team_name": "Joyce S. Jones",
+         "team_designation": "Project Manager",
+         "description": "Hi, my name is Joyce S. Jones and i am a project manager, i play a critical role in planning, executing, and overseeing projects within an organization. My responsibilities typically include defining project objectives, creating project plans, coordinating resources, managing budgets and timelines, and ensuring successful project delivery.",
+         "profile_url": "assets/img/team/team-6.jpg",
+         "gender": "male"
+      },
+      {
+         "team_name": "Donny J. Romero",
+         "team_designation": "Financial Analyst",
+         "description": "Hi, my name is Donny J. Romero and i am a financial analyst, i have a vital role in assessing and analyzing financial data to support informed decision-making within an organization. My responsibilities typically include analyzing financial statements, conducting financial forecasting and budgeting, assessing investment opportunities, conducting market research, and providing recommendations to optimize financial performance.",
+         "profile_url": "assets/img/team/team-7.jpg",
+         "gender": "male"
+      },
+      {
+         "team_name": "Tony W. Clawson",
+         "team_designation": "Data Analyst",
+         "description": "Hi, my name is Tony W. Clawson and i am a data analyst, i have an important role in collecting, analyzing, and interpreting data to derive meaningful insights and support informed decision-making within an organization. My responsibilities may include data cleansing and preprocessing, performing statistical analysis, creating data visualizations, developing and maintaining databases, and generating reports.",
+         "profile_url": "assets/img/team/team-8.jpg",
+         "gender": "male"
+      }
+   ]
+}
